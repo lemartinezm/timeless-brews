@@ -1,0 +1,33 @@
+.left-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: var(--black);
+  z-index: -1;
+}
+
+.right-color {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: var(--principal-color);
+  z-index: -1;
+}
+
+.hero-container {
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.portrait-image {
+  align-self: center;
+  width: 280px;
+  height: 280px;
+  mix-blend-mode: overlay;
+}

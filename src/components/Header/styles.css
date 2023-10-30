@@ -1,0 +1,10 @@
+.navbar {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: center;
+}
