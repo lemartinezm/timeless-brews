@@ -1,3 +1,8 @@
+header {
+  position: absolute;
+  width: 100%;
+}
+
 .navbar {
   color: var(--secondary-color);
   text-transform: uppercase;
