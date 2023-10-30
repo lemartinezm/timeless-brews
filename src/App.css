@@ -9,9 +9,17 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 main {
   display: flex;
-  width: 100%;
   flex-direction: column;
+  width: 100%;
   flex: 1;
 }

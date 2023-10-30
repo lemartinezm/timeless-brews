@@ -11,10 +11,12 @@ export default function HeroSection() {
         />
 
         <div className="title-container">
-          <h1>Timeless Brews</h1>
-          <p>Robert Watson</p>
-          <p>First Tisa brewmaster</p>
+          <h1 className="title">Timeless Brews</h1>
+          <p className="subtitle-name">Robert Watson</p>
+          <p className="subtitle-description">Tisa's first brewmaster</p>
         </div>
+
+        <p className="catchphrase">Discover the unexpected</p>
       </section>
     </>
   );

@@ -1,5 +1,6 @@
 header {
   position: absolute;
+  top: 0;
   width: 100%;
 }
 
@@ -12,4 +13,8 @@ header {
 .navlinks {
   display: flex;
   justify-content: center;
+}
+
+.logo {
+  width: clamp(5rem, 25vw, 7rem);
 }

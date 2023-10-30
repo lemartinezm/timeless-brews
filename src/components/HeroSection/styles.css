@@ -5,10 +5,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1;
+  min-height: 100vh;
   color: var(--secondary-color);
   font-weight: 500;
-  padding: 1rem;
   background: linear-gradient(
     90deg,
     rgba(17, 17, 15, 1) 0%,
@@ -21,22 +20,40 @@
 .portrait-image {
   position: absolute;
   align-self: center;
-  width: clamp(1rem, 75%, 800px);
+  width: clamp(1rem, 75%, 500px);
   height: auto;
-  mix-blend-mode: overlay;
+  mix-blend-mode: multiply;
 }
 
 .title-container {
   max-width: 1280px;
   margin: 0 auto;
   text-transform: uppercase;
+  /* isolation: isolate; */
 }
 
-h1 {
-  font-size: clamp(2rem, 9vw, 10rem);
+.title {
+  font-size: clamp(2rem, 9vw, 9rem);
   text-align: center;
 }
 
-p {
+.subtitle-name {
+  font-size: clamp(1rem, 5vw, 2rem);
   text-align: end;
+}
+
+.subtitle-description {
+  font-size: clamp(0.75rem, 3vw, 1.25rem);
+  text-align: end;
+}
+
+.catchphrase {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  word-spacing: 0.75rem;
 }
