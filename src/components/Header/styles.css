@@ -2,6 +2,7 @@ header {
   position: absolute;
   top: 0;
   width: 100%;
+  max-width: 1280px;
 }
 
 .navbar {
@@ -13,8 +14,53 @@ header {
 .navlinks {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+li {
+  flex: 1;
+  text-align: center;
+}
+
+li:nth-child(1),
+li:nth-child(2),
+li:nth-child(4),
+li:nth-child(5) {
+  display: none;
 }
 
 .logo {
   width: clamp(5rem, 25vw, 7rem);
+}
+
+.menu-container {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+
+  .navlinks {
+    justify-content: space-between;
+    padding: 0 3rem;
+  }
+
+  li:nth-child(1),
+  li:nth-child(2),
+  li:nth-child(4),
+  li:nth-child(5) {
+    display: list-item;
+  }
+
+  .link-left {
+    text-align: start;
+  }
+
+  .link-right {
+    text-align: end;
+  }
 }
