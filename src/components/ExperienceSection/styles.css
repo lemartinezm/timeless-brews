@@ -1,0 +1,35 @@
+.experience-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 1440px;
+  margin: 3rem auto 0;
+  width: 100%;
+}
+
+.experience-title {
+  text-transform: uppercase;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+}
+
+.experience-subtitle {
+  font-size: clamp(1rem, 5vw, 1.5rem);
+}
+
+.experience-image {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.experience-images-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+@media (min-width: 1280px) {
+  .experience-images-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}
