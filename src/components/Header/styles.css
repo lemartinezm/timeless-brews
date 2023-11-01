@@ -23,14 +23,15 @@ header {
   gap: 1rem;
 }
 
-li {
-  flex: 1;
-  text-align: center;
-}
-
 .link-left,
 .link-right {
   display: none;
+  flex: 1;
+}
+
+.logo-container {
+  flex: 1;
+  text-align: center;
 }
 
 .logo {
