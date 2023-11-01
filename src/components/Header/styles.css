@@ -28,10 +28,8 @@ li {
   text-align: center;
 }
 
-li:nth-child(1),
-li:nth-child(2),
-li:nth-child(4),
-li:nth-child(5) {
+.link-left,
+.link-right {
   display: none;
 }
 
@@ -55,18 +53,13 @@ li:nth-child(5) {
     padding: 0 3rem;
   }
 
-  li:nth-child(1),
-  li:nth-child(2),
-  li:nth-child(4),
-  li:nth-child(5) {
-    display: list-item;
-  }
-
   .link-left {
+    display: list-item;
     text-align: start;
   }
 
   .link-right {
+    display: list-item;
     text-align: end;
   }
 }
