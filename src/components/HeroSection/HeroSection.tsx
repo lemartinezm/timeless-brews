@@ -5,7 +5,7 @@ export default function HeroSection() {
     <>
       <section className="hero-container">
         <img
-          src="portrait-2-sm.png"
+          src="portrait-2-sm.webp"
           alt="Portrait founder"
           className="portrait-image"
         />

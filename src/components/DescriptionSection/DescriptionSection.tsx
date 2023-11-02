@@ -10,7 +10,7 @@ export default function DescriptionSection() {
           can
         </p>
         <div className="image-container">
-          <img src="/timeless-1-nobg.png" alt="Timeless brews image" />
+          <img src="/timeless-1-nobg.webp" alt="Timeless brews image" />
         </div>
       </article>
       <article className="description-right">
@@ -18,7 +18,7 @@ export default function DescriptionSection() {
         <p className="description-subtitle">
           Products sold in the U.S. are brewed in the U.S., Canada and Vietnam.
         </p>
-        <img src="/logo-3-lg-light.png" alt="Logo" />
+        <img src="/logo-3-lg-light.webp" alt="Logo" />
         <p className="description-text">
           Timeless brews premium lagers using the highest-quality ingredients we
           cand find giving each of our beers our signature crisp, refreshing

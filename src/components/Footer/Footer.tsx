@@ -8,7 +8,7 @@ export default function Footer() {
     <div className="footer-container">
       <footer className="footer">
         <div className="footer-title">
-          <img src="logo-3-sm-light.png" alt="Logo" className="footer-logo" />
+          <img src="logo-3-sm-light.webp" alt="Logo" className="footer-logo" />
           <span>Timeless</span>
         </div>
         <nav className="footer-navbar">

@@ -7,32 +7,32 @@ export default function ExperienceSection() {
       <p className="experience-subtitle">#LiveTimeless</p>
       <div className="experience-images-container">
         <img
-          src="/experience-7.jpg"
+          src="/experience-7.webp"
           alt="Experience image"
           className="experience-image"
         />
         <img
-          src="/experience-3.jpg"
+          src="/experience-3.webp"
           alt="Experience image"
           className="experience-image"
         />
         <img
-          src="/experience-4.jpg"
+          src="/experience-4.webp"
           alt="Experience image"
           className="experience-image"
         />
         <img
-          src="/experience-5.jpg"
+          src="/experience-5.webp"
           alt="Experience image"
           className="experience-image"
         />
         <img
-          src="/experience-6.jpg"
+          src="/experience-6.webp"
           alt="Experience image"
           className="experience-image"
         />
         <img
-          src="/experience-8.jpg"
+          src="/experience-8.webp"
           alt="Experience image"
           className="experience-image"
         />
