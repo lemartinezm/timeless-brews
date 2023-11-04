@@ -1,3 +1,5 @@
+@import url("../../styles/animations.css");
+
 .description-container {
   display: flex;
   flex-direction: column;
@@ -5,7 +7,6 @@
   text-align: center;
   max-width: 1440px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .description-left {
@@ -52,12 +53,24 @@
 .description-left img {
   width: clamp(8rem, 100%, 15rem);
   margin-bottom: -5rem;
+  view-timeline: --leftImage block;
+  animation-timeline: --leftImage;
+  animation-name: appear;
+  animation-duration: 1ms;
+  animation-range: entry 5% cover 30%;
+  animation-fill-mode: both;
 }
 
 .description-right img {
   width: 100%;
   width: clamp(10rem, 20vw, 12rem);
   margin: 1rem;
+  view-timeline: --rightImage block;
+  animation-timeline: --rightImage;
+  animation-name: appear;
+  animation-duration: 1ms;
+  animation-range: entry 5% cover 30%;
+  animation-fill-mode: both;
 }
 
 @media (min-width: 768px) {

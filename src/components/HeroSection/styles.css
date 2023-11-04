@@ -15,6 +15,8 @@
     rgba(1, 67, 57, 1) 50%,
     rgba(1, 67, 57, 1) 100%
   );
+  background-size: 200%;
+  animation: background-closeup 1s forwards ease-out;
 }
 
 .portrait-image {
@@ -35,16 +37,23 @@
 .title {
   font-size: clamp(2rem, 9vw, 9rem);
   text-align: center;
+  animation: fade-in 1s forwards 1s;
+  opacity: 0;
+  overflow: hidden;
 }
 
 .subtitle-name {
   font-size: clamp(1rem, 5vw, 2rem);
   text-align: end;
+  animation: fade-in 1s forwards 1.5s;
+  opacity: 0;
 }
 
 .subtitle-description {
   font-size: clamp(0.75rem, 3vw, 1.25rem);
   text-align: end;
+  animation: fade-in 1s forwards 2s;
+  opacity: 0;
 }
 
 .catchphrase {
@@ -56,4 +65,47 @@
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   word-spacing: 0.75rem;
+  animation: fade-in 1s forwards 1s;
+  opacity: 0;
+}
+
+@media (min-width: 1024px) {
+  .hero-container {
+    animation-duration: 1.5s;
+  }
+
+  .title {
+    animation-delay: 1.5s;
+  }
+
+  .subtitle-name {
+    animation-delay: 2s;
+  }
+
+  .subtitle-description {
+    animation-delay: 2.5s;
+  }
+
+  .catchphrase {
+    animation-delay: 1.5s;
+  }
+}
+
+@keyframes background-closeup {
+  from {
+    background-position: 100%;
+  }
+  to {
+    background-position: 50%;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    transform: translateY(25%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
