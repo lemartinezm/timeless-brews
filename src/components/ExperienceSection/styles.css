@@ -1,3 +1,5 @@
+@import url("../../styles/animations.css");
+
 .experience-container {
   text-align: center;
   display: flex;
@@ -20,6 +22,12 @@
 .experience-image {
   width: 100%;
   box-sizing: border-box;
+  view-timeline: --experienceImage block;
+  animation-timeline: --experienceImage;
+  animation-name: appear;
+  animation-duration: 1ms;
+  animation-fill-mode: both;
+  animation-range: entry 0% cover 35%;
 }
 
 .experience-images-container {

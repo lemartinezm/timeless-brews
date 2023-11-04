@@ -1,3 +1,5 @@
+@import url("../../styles/animations.css");
+
 .products-container {
   margin: 0 auto;
   padding: 2rem 0;
@@ -12,13 +14,18 @@
 
 .product-card {
   width: 100%;
-  overflow: hidden;
   text-align: center;
 }
 
 .product-card img {
   width: 100%;
   max-width: 20rem;
+  view-timeline: --productImage block;
+  animation-timeline: --productImage;
+  animation-name: appear;
+  animation-duration: 1ms;
+  animation-fill-mode: both;
+  animation-range: entry 0% cover 35%;
 }
 
 .product-title {

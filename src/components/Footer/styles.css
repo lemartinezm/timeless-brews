@@ -1,3 +1,5 @@
+@import url("../../styles/animations.css");
+
 .footer-container {
   background-color: var(--principal-color);
   width: 100%;
@@ -41,6 +43,10 @@
 
 .footer-link {
   text-transform: uppercase;
+}
+
+.no-hover::after {
+  display: none;
 }
 
 .icons-container {

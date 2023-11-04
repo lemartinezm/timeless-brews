@@ -3,6 +3,7 @@ interface InstagramSvgProps {
   height?: number | string;
   color?: string;
   viewBox?: string;
+  className?: string;
 }
 
 export default function InstagramSvg({
@@ -10,6 +11,7 @@ export default function InstagramSvg({
   height = "24",
   viewBox = "0 0 24 24",
   width = "24",
+  className = "",
 }: InstagramSvgProps) {
   return (
     <svg
@@ -18,6 +20,7 @@ export default function InstagramSvg({
       height={height}
       viewBox={viewBox}
       color={color}
+      className={className}
     >
       <path
         fill="currentColor"
