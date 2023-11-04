@@ -8,3 +8,12 @@
     scale: 100%;
   }
 }
+
+.icon-animation {
+  scale: 100%;
+  transition: all 0.2s;
+}
+
+.icon-animation:hover {
+  scale: 125%;
+}
