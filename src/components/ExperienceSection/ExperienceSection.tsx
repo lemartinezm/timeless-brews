@@ -1,8 +1,14 @@
+import { useRef } from "react";
 import "./styles.css";
 
 export default function ExperienceSection() {
+  const liveTimeless = useRef(null);
   return (
-    <section className="experience-container">
+    <section
+      className="experience-container"
+      id="live-timeless"
+      ref={liveTimeless}
+    >
       <h2 className="experience-title">Live the experience</h2>
       <p className="experience-subtitle">#LiveTimeless</p>
       <div className="experience-images-container">

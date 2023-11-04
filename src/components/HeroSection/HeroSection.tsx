@@ -3,7 +3,7 @@ import "./styles.css";
 export default function HeroSection() {
   return (
     <>
-      <section className="hero-container">
+      <section className="hero-container" id="home">
         <img
           src="portrait-2-sm.webp"
           alt="Portrait founder"
