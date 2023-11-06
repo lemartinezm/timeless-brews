@@ -10,12 +10,20 @@ export default function Header() {
       <nav className="navbar">
         <ul className={showNavbar ? "navlinks active" : "navlinks"}>
           <li className="link-left">
-            <a href="#history" className="link">
+            <a
+              href="#history"
+              className="link"
+              onClick={() => setShowNavbar(false)}
+            >
               Our History
             </a>
           </li>
           <li className="link-left">
-            <a href="#beers" className="link">
+            <a
+              href="#beers"
+              className="link"
+              onClick={() => setShowNavbar(false)}
+            >
               Our Beers
             </a>
           </li>
@@ -23,7 +31,11 @@ export default function Header() {
             <img src="logo-3-sm-light.webp" alt="Logo" className="logo" />
           </li>
           <li className="link-right">
-            <a href="#live-timeless" className="link">
+            <a
+              href="#live-timeless"
+              className="link"
+              onClick={() => setShowNavbar(false)}
+            >
               Live Timeless
             </a>
           </li>
