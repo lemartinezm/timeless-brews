@@ -1,11 +1,14 @@
-import MenuSvg from "../Icons/Menu";
+import { useState } from "react";
+import MenuSvg from "../Icons/Menu/Menu";
 import "./styles.css";
 
 export default function Header() {
+  const [showNavbar, setShowNavbar] = useState<boolean>(false);
+
   return (
     <header>
       <nav className="navbar">
-        <ul className="navlinks">
+        <ul className={showNavbar ? "navlinks active" : "navlinks"}>
           <li className="link-left">
             <a href="#history" className="link">
               Our History
@@ -16,7 +19,7 @@ export default function Header() {
               Our Beers
             </a>
           </li>
-          <li className="logo-container">
+          <li className="link-logo">
             <img src="logo-3-sm-light.webp" alt="Logo" className="logo" />
           </li>
           <li className="link-right">
@@ -36,9 +39,18 @@ export default function Header() {
           </li>
         </ul>
       </nav>
+      <div className="logo-container">
+        <img src="logo-3-sm-light.webp" alt="Logo" className="logo" />
+      </div>
+
       <div className="menu-container">
-        <MenuSvg color="var(--secondary-color)" />
+        <MenuSvg
+          className=""
+          isOpen={showNavbar}
+          onClick={() => setShowNavbar((val) => !val)}
+        />
       </div>
     </header>
   );
 }
+// TODO: terminar la animacion del header mobile
