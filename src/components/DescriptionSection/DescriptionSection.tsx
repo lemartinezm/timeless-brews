@@ -2,7 +2,7 @@ import "./styles.css";
 
 export default function DescriptionSection() {
   return (
-    <section className="description-container">
+    <section className="description-container" id="history">
       <article className="description-left">
         <h2 className="description-title">Forged from steel</h2>
         <p className="description-subtitle">

@@ -2,7 +2,7 @@ import "./styles.css";
 
 export default function ProductsSection() {
   return (
-    <section className="products-container">
+    <section className="products-container" id="beers">
       <article className="product-card">
         <img src="/blue-nobg.webp" alt="Timeless Blue Beer" />
         <h3 className="product-title">Blue Beer</h3>
