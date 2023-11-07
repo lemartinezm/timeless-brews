@@ -1,27 +1,37 @@
-# React + TypeScript + Vite
+# Timeless Brews Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the repository for the "Timeless Brews" landing page! 🍺
 
-Currently, two official plugins are available:
+This project was developed as a personal initiative to showcase my skills in web development and user experience design. The landing page features a fictional beer called "Timeless Brews," blending tradition with a modern twist.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
 
-## Expanding the ESLint configuration
+- React: I utilized React for the development of the page, harnessing its power and flexibility.
+- Design Inspired by Dribbble: The page's design is based on an incredible creation I found on Dribbble. You can find the design [here](https://dribbble.com/shots/5657029-sapporo-beer?utm_source=Clipboard_Shot&utm_campaign=emrescr&utm_content=sapporo%20beer&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=emrescr&utm_content=sapporo%20beer&utm_medium=Social_Share).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Screenshots
 
-- Configure the top-level `parserOptions` property like this:
+| Desktop                                           | Mobile                                          |
+| ------------------------------------------------- | ----------------------------------------------- |
+| ![Desktop version](./public/timeless-desktop.png) | ![Mobile version](./public/timeless-mobile.png) |
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## How to Test the Page
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clone this repository to your local machine.
+2. Open a terminal in the project's root folder.
+3. Run `npm install` to install the dependencies.
+4. Run `npm run dev` to launch the application in development mode.
+
+## Contributions
+
+I appreciate contributions and feedback! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
+
+## Link to the Page
+
+You can view the page in action [here](https://timeless-brews.vercel.app/).
+
+## Contact
+
+If you wish to get in touch with me, you can find me on [LinkedIn](https://www.linkedin.com/in/lemartinezm/).
+
+Thank you for visiting this repository and for your interest in my work! 😊
